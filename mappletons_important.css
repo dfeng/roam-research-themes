@@ -55,6 +55,10 @@
 .roam-bullet-closed .simple-bullet-inner {
   background-color: #394b59 !important;
 }
+/* matching hover arrow */
+.controls .rm-caret {
+  color: #e5e9f2;
+}
 
 .rm-block-ref {
   /*border-bottom: none !important;*/
