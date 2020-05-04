@@ -1,0 +1,198 @@
+.roam-block-container {
+  max-width: 1000px !important;
+  border-radius: 0px !important; 
+}
+.roam-block, .rm-block-text {
+  max-width: 850px !important;
+}
+
+/* kanban */
+
+.kanban-board {
+  background-color: #fff !important;
+}
+
+.kanban-card {
+  background-color: white !important;
+  margin: 8px !important;
+  box-shadow: 0px 1px 2px #9eb3c0 !important;
+  padding: 10px !important;
+  border-radius: 2px !important;
+  line-height: 1.3em !important;
+}
+
+.kanban-title {
+  text-align: center !important;
+  font-weight: bold !important;
+  padding-top: 6px !important;
+}
+
+.kanban-column {
+  background-color: #e4edf2 !important;
+  margin: 0px 4px 0px 4px !important;
+  padding: 4px !important;
+  min-width: 200px !important;
+  border-radius: 3px !important;
+}
+
+/* [[ ]] */
+.rm-page-ref-brackets {
+  /*display: none !important;*/
+}
+
+.block-border-left {
+  /*border-left: 1px solid #fff !important;*/ /* this hides the border */
+}
+
+/* inner bullet */
+.controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: #e5e9f2 !important;
+}
+/* when it's compressed */
+.roam-bullet-closed {
+  background-color: #e5e9f2 !important;
+}
+.roam-bullet-closed .simple-bullet-inner {
+  background-color: #394b59 !important;
+}
+
+.rm-block-ref {
+  /*border-bottom: none !important;*/
+  font-size: 1em !important;
+  /*padding: 4px !important;*/
+  color: #6c8093 !important;
+  /*color: #537ea6 !important;*/
+}
+/* create circle for reference */
+.rm-block-ref::before {
+  content:'' !important;
+  display: inline-block !important;
+  width: 10px !important;
+  border-radius: 40px !important;
+  height: 10px !important;
+  background: #F39237 !important;
+  /* more grey */
+  /*background: #9aabd0 !important;*/
+  margin-right: 5px !important;
+}
+
+.checkmark {
+  background: #fff !important;
+}
+.check-container input:checked ~ .checkmark {
+  background: #33bdea !important;
+  /*background: #2db4eb !important;*/
+}
+.check-container input:checked ~ .checkmark:after {
+  border-color: #fff !important;
+}
+
+/* references (links), grey background */
+.rm-reference-item {
+  margin-top: 8px !important;
+  border-radius: 6px !important;
+  border: 1px solid #e4e9ee !important;
+  margin-right: 8px !important;
+  flex: 1 1 100% !important;
+  word-break: break-word !important;
+  background-color: #f7f9fb !important;
+  /*padding: 8px !important;*/
+}
+
+.rm-level2 {
+    font-size: 1.5em !important;
+}
+.rm-level3 {
+  font-weight: 400 !important;
+  font-size: 1.3em !important;
+  color: #939aae !important;
+  /*color: #8390b2 !important;*/
+}
+
+.rm-page-ref {
+  /*color: #9aabd0 !important;*/
+  color: #1097b9 !important; /* blue, ^ more gray */
+}
+/* custom for @ */
+.rm-page-ref[data-tag*="@"] {
+  color: #EA526F !important; /* F39237 */
+}
+
+.rm-page-ref-link-color {
+  color: #F39237 !important;
+  /*color: #e66f36 !important;*/
+  /*font-weight: 600 !important;*/
+}
+
+.roam-body a {
+  color: #8A3CC8 !important;
+  /*color: #714fbe !important;*/
+}
+
+.intercom-app,
+.intercom-launcher-frame,
+#intercom-container {
+  display: none !important !important;
+}
+
+.roam-body .roam-app .roam-sidebar-container {
+  background-color: white !important;
+  /*border-right: 1px #eee solid !important;*/
+}
+
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
+.roam-body .roam-app .roam-sidebar-container > * {
+  opacity: 80% !important;
+  box-shadow: none !important;
+}
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page:hover,
+.roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .log-button:hover {
+  background: white !important;
+  color: black !important;
+  opacity: 100% !important;
+}
+#buffer.tall {
+  height: calc(100vh - 50px) !important;
+}
+.check-container {
+  padding-right: 4px !important;
+}
+
+/*span.rm-page-ref {
+  border-radius: 2px !important;
+  padding-left: 1px !important;
+  padding-right: 1px !important;
+}
+.content span.rm-page-ref {
+  padding: 4px 1px 1px !important;
+}*/
+
+.center-proj {
+  text-align: center !important;
+}
+
+/* hide email */
+.bp3-button>:last-child {
+  color: white !important !important;
+}
+
+/* remove separator between stars */
+.starred-pages-wrapper>:first-child {
+  background-color: #fff !important;
+}

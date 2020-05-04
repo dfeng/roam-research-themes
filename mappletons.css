@@ -1,29 +1,12 @@
-/*  Make sure you have the fonts Lato and Open Sans installed locally on your machine.
-They're free to download from Google:
-
-https://fonts.google.com/specimen/Lato
-https://fonts.google.com/specimen/Open+Sans  */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato';
-}
-
-div,
-textarea {
-  font-family: 'Open Sans';
-}
-
 .roam-block-container {
   max-width: 1000px;
+  border-radius: 0px !important; 
 }
 .roam-block, .rm-block-text {
   max-width: 850px;
 }
+
+/* kanban */
 
 .kanban-board {
   background-color: #fff;
@@ -52,37 +35,98 @@ textarea {
   border-radius: 3px;
 }
 
+/* [[ ]] */
+.rm-page-ref-brackets {
+  /*display: none;*/
+}
+
+.block-border-left {
+  /*border-left: 1px solid #fff;*/ /* this hides the border */
+}
+
+/* inner bullet */
+.controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: #e5e9f2;
+}
+/* when it's compressed */
+.roam-bullet-closed {
+  background-color: #e5e9f2;
+}
+/*.roam-bullet-closed .simple-bullet-inner {
+  background-color: #fff;
+}*/
+
 .rm-block-ref {
-  border-bottom: none;
+  /*border-bottom: none;*/
   font-size: 1em;
-  padding: 4px;
-  color: #537ea6;
+  /*padding: 4px;*/
+  color: #6c8093;
+  /*color: #537ea6;*/
+}
+/* create circle for reference */
+.rm-block-ref::before {
+  content:'';
+  display: inline-block;
+  width: 10px;
+  border-radius: 40px;
+  height: 10px;
+  background: #F39237;
+  /* more grey */
+  /*background: #9aabd0;*/
+  margin-right: 5px;
 }
 
 .checkmark {
   background: #fff;
 }
 .check-container input:checked ~ .checkmark {
-  background: #2db4eb;
+  background: #33bdea;
+  /*background: #2db4eb;*/
 }
 .check-container input:checked ~ .checkmark:after {
   border-color: #fff;
 }
 
+/* references (links), grey background */
+.rm-reference-item {
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #e4e9ee;
+  margin-right: 8px;
+  flex: 1 1 100%;
+  word-break: break-word;
+  background-color: #f7f9fb;
+  /*padding: 8px;*/
+}
+
+.rm-level2 {
+    font-size: 1.5em;
+}
 .rm-level3 {
-  color: #8390b2;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #939aae;
+  /*color: #8390b2;*/
 }
 
 .rm-page-ref {
-  color: #1097b9;
+  /*color: #9aabd0;*/
+  color: #1097b9; /* blue, ^ more gray */
+}
+/* custom for @ */
+.rm-page-ref[data-tag*="@"] {
+  color: #EA526F; /* F39237 */
 }
 
 .rm-page-ref-link-color {
-  color: #e66f36;
+  color: #F39237;
+  /*color: #e66f36;*/
+  /*font-weight: 600;*/
 }
 
-a {
-  color: #714fbe;
+.roam-body a {
+  color: #8A3CC8;
+  /*color: #714fbe;*/
 }
 
 .intercom-app,
@@ -90,10 +134,12 @@ a {
 #intercom-container {
   display: none !important;
 }
+
 .roam-body .roam-app .roam-sidebar-container {
   background-color: white;
-  border-right: 1px #eee solid;
+  /*border-right: 1px #eee solid;*/
 }
+
 .roam-body
   .roam-app
   .roam-sidebar-container
@@ -103,6 +149,7 @@ a {
   .page,
 .roam-body .roam-app .roam-sidebar-container > * {
   opacity: 80%;
+  box-shadow: none;
 }
 .roam-body
   .roam-app
@@ -125,4 +172,27 @@ a {
 }
 .check-container {
   padding-right: 4px;
+}
+
+/*span.rm-page-ref {
+  border-radius: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.content span.rm-page-ref {
+  padding: 4px 1px 1px;
+}*/
+
+.center-proj {
+  text-align: center;
+}
+
+/* hide email */
+.bp3-button>:last-child {
+  color: white !important;
+}
+
+/* remove separator between stars */
+.starred-pages-wrapper>:first-child {
+  background-color: #fff;
 }
